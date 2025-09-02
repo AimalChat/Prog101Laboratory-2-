@@ -43,11 +43,12 @@ tickets are different because I inputted different values for each ticket machin
 6a. Write out what you think the outer wrappers of the Student and LabClass classes 
 might look like; do not worry about the inner part.
 
-6b. For student class :
+6b. (Note* = I forgot to put class after public) 
+For student class :
 /**
 * Create a new Student with a given name and ID number 
 */
-public Student(string fullName, string studentID)
+public class Student(string fullName, string studentID)
 {
 
 }
@@ -56,7 +57,7 @@ For lab class :
 /**
 * Create a new LabClass and input the maximum number of students.
 */
-public LabClass(int maxNumberOfStudents)
+public class LabClass(int maxNumberOfStudents)
 {
 
 }
@@ -69,23 +70,49 @@ do you get when you now press the Compile button? Do you think this message clea
 explains what is wrong? Change the class back to how it was, and make sure that this 
 clears the error when you compile it.
 
-7b.
+7b.Yes it does matter, compiling it when class public is written shows that 8 errors
+have been flagged as a result. In the now modified class, its diagram now has red lines
+spanning the inside. Its a sign that an error has occured. I recieved 2 different kinds
+of errors,the longest one being : "unamed classes are a preview feature and are disabled
+by default. (use --enable-preview to enable unamed classes)" and the other one, repeating
+7 times : "class, interface, enum, or record expected." To me, this message shows one thing
+clear truth, the new phrasing has made my intention, of creating another class, unrecognizable
+by the program. Other than that, Im assuming this way of writing the class'outter wrapper is
+never the way you should be writing it. 
 
-8a.
+8a. Check whether or not it is possible to leave out the word public from the outer wrapper of the 
+TicketMachine class.
 
-8b.
+8b.It is possible to have the class function without the modifier "public".
 
-9a.
+9a. Put back the word public, and then check whether it is possible to leave out the word 
+class by trying to compile again. Make sure that both words are put back as they were 
+originally before continuing
 
-9b.
+9b.Nope, the class falls apart and becomes unexecutable without specifying that "TicketMachine"
+is a class.
 
-10a.
+10a.From your earlier experimentation with the ticket machine objects within BlueJ, 
+you can probably remember the names of some of the methods – printTicket, for instance.
+Look at the class definition in source code and use this knowledge, along with the 
+additional information about ordering we have given you, to make a list of the names of
+the fields, constructors, and methods in the TicketMachine class. Hint: There is only one
+constructor in the class.
 
-10b.
+10b.List of the names of fields : int price, int balance, int cost and total.
+Construtor : TicketMachine.
+Methods : getPrice, getBalance, setBalance, insertMoney, printTicket.
 
-11a.
+11a.What are the two features of the constructor that make it look significantly 
+different from the methods of the class?
 
-11b.
+11b.In the source code for this class, the two features differentiating "TicketMaster"
+from the rest is the lack of a lowercase letter in its beginning and the fact its lies in
+above everything else in the code, apart from the description of the machine. It's
+also found in a different place than the others, rather than being encased in a yellow
+rectangle, its intergrated within the outer shell that contains the yellow rectangles.
+I believe the yellow rectangles are methods and these methods belong to the "TicketMachine"'s
+class constructor. Since the class defines the methods and parameters.
 
 12a.
 
