@@ -114,47 +114,59 @@ rectangle, its intergrated within the outer shell that contains the yellow recta
 I believe the yellow rectangles are methods and these methods belong to the "TicketMachine"'s
 class constructor. Since the class defines the methods and parameters.
 
-12a.
+12a.Given that the type of the price field is int, what do you think is the type of each 
+of the following fields? : 
+1.private int count; 
+2.private Student representative;
+3.private Server host;
 
-12b.
+12b. (Note* The class can be a type, these are all declarations of the Class named "..." )
+1.integer
+2.(Student)
+3.(Server)
 
-13a.
+13a.What are the names of the following fields?
+1.private boolean alive;
+2.private Person tutor;
+3.private Game game;
 
 13b.
+1.alive
+2.tutor
+3.game
 
-14a.
+14a.From what you know about the naming conventions for classes, which of the type 
+names in Exercises 2.12 and 2.13 would you say are class names?
 
-14b.
+14b.Person,Student,Server,Game
 
-15a.
+15a. In the following field declaration from the TicketMachine class private int price; 
+does it matter which order the three words appear in? Edit the TicketMachine class to try 
+different orderings. After each change, close the editor. Does the appearance of the class 
+diagram after each change give you a clue as to whether other orderings are possible? Look 
+at any error messages that the editor shows you by moving the cursor over the error 
+indicator. Make sure that you reinstate the original version after your experiments!
 
-15b.
+15b.Yes the order extremely matters, it becomes crossed out, meaning it is impossible to call the 
+"new TicketMachine(int cost)" method. (Note* Always have the visibility = access modifier first,
+then the data type and finally the name of the variable.)
 
-16a.
+16a.Is it always necessary to have a semicolon at the end of a field declaration? 
+Once again, experiment via the editor. The rule you will learn here is an important 
+one, so be sure to remember it.
 
-16b.
+16b. Yes, always. If not included, the program will not be able to compute the program.
 
-17a.
+17a. Write in full the declaration for a field of type int whose name is status.
 
-17b.
+17b.private int status;
 
-18a.
+18a. To what class does the following constructor belong? public Student(String name)
 
-18b.
+18b.Student
 
-19a.
+19a.How many parameters does the following constructor have, and what are their types?
+public Book(String title, double price)
 
-19b.
-
-20a.
-
-20b.
-
-21a.
-
-21b.
-
-22a.
-
-22b.
+19b.There are 2 parameters, first one having String and the other as double.
 
