@@ -48,6 +48,15 @@ public class TicketMachine
     }
 
     /**
+     * Reset value of the balance via a new input.
+     */
+    public void setBalance(int newBalance)
+    {
+        balance = newBalance;
+    }
+
+    
+    /**
      * Receive an amount of money from a customer.
      */
     public void insertMoney(int amount)
