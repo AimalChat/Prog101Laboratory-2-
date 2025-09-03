@@ -398,6 +398,16 @@ inserting some money, printing some tickets, checking the total, and then
 emptying the machine. Is the empty method a mutator or an accessor?
 
 
-46b.
+46b.No, it does not need parameters and this method is a mutator since it
+changes the value of total. it is not a accessor since their role is simply
+presenting the data stored in the value, without modifying.
+Code for the method :
+/**
+     * Remove all money from the machine.
+     */
+    public void empty()
+    {
+        total = 0;
+    }
 
 
