@@ -233,63 +233,114 @@ value of its parameter to a field named score.
 31b. 
 score = points + score;
 
-32a.
+32a. The addCredits method is from the Student class in the lab-classes
+project from Chapter 1:
+ public void addCredits(int additionalPoints)
+ {
+ credits += additionalPoints;
+ }
+Is the addCredits method a mutator? If so, how could you demonstrate 
+that with a Student object? Try it out.
 
 32b.
 
-33a.
+33a.Complete the following method, whose purpose is to subtract the value
+of its parameter from a field named price :
+ /**
+ * Reduce price by the given amount.
+ */
+ public void discount(int amount)
+ {
+     // TODO: Subtract amount from price
+ }
+
 
 33b.
 
-34a.
+34a.Write a setter method for a field called age which is of type int. 
+Give the parameter the name currentAge.
 
 34b.
 
-35a.
+35a.Write a setter method for the following field:
+private boolean alive;
 
 35b.
 
-36a.
+36a. Modify the constructor TicketMachine so that its parameter is called 
+price, and change the assignment to the price field to match 
+(price = price). Now create a ticket machine object and bring up an 
+inspector. What do you observe in the inspector about the value of the 
+price field as a result of this change?
 
 36b.
 
-37a.
+37a.Write down exactly what will be printed by the following statement:
+System.out.println("My cat has green eyes.");
 
 37b.
 
-38a.
+38a.Add a method called prompt to the TicketMachine class. This should 
+have a void return type and take no parameters. The body of the method 
+should print the following single line of output:
+ Please insert the correct amount of money.
 
 38b.
 
-39a.
+39a. What do you think would be printed if you altered the fourth 
+statement of printTicket so that price also has quotes around it, as 
+follows? System.out.println("# " + "price" + " cents.");
 
 39b.
 
-40a.
+40a. What about the following version? 
+System.out.println("# price cents.");
 
 40b.
 
-41a.
+41a.Add a showPrice method to the TicketMachine class. This should have a 
+void return type and take no parameters. The body of the method should 
+print: “The price of a ticket is xyz cents.” where xyz should be 
+replaced by the value held in the price field when the method is called.
 
 41b.
 
-42a.
+42a. Create two ticket machines with differently priced tickets. Do 
+calls to their showPrice methods show the same output, or different? 
+How do you explain this effect?
 
 42b.
 
-43a.
+43a.Challenge exercise In the printTicket method, replace the statement 
+that prints the price of the ticket withthe following:
+ System.out.printf(“# %d cents.%n”, price);
+Note that the call is now to a printf method rather than println. Does 
+it print the same output as statement it has replaced? From the line 
+that it prints, can you work out what the %d and %n parts mean here?
 
 43b.
 
-44a.
+44a.Modify the constructor of TicketMachine so that it no longer has a 
+parameter. Instead, the price of tickets should be fixed at 1000 cents. 
+What effect does this have when you construct ticket-machine objects 
+within BlueJ?
 
 44b.
 
-45a.
+45a. Give the class two constructors. One should take a single parameter 
+that specifies the price, and the other should take no parameter and set 
+the price to be a default value of your choosing. Test your 
+implementation by creating machines via the two different constructors.
 
 45b.
 
-46a.
+46a. Implement a method, empty, that simulates the effect of removing 
+all money from the machine. This method should have a void return type, 
+and its body should simply set the total field to zero. Does this method 
+need to take any parameters? Test your method by creating a machine, 
+inserting some money, printing some tickets, checking the total, and then
+emptying the machine. Is the empty method a mutator or an accessor?
+
 
 46b.
 
