@@ -44,7 +44,6 @@ public class TicketMachine{
         total = 0;
     }
     
-
     /**
      * Set the alive state of the student
      */
@@ -53,6 +52,14 @@ public class TicketMachine{
         alive = true;
     }
 
+    /**
+     * Remove all money from the machine.
+     */
+    public void empty()
+    {
+        total = 0;
+    }
+    
     /**
      * Show the price of tickets for this machine.
      */
