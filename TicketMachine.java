@@ -31,6 +31,14 @@ public class TicketMachine
     }
 
     /**
+     * Retreive the total amount of money collected by this machine.
+     */
+    public int getTotal()
+    {
+        return total;
+    }
+    
+    /**
      * Return the price of a ticket.
      */
     public int getPrice()

@@ -211,7 +211,7 @@ Why do you think this might be?
 
 29b.
 
-31a. Complete the body of the following method, whose purpose is to add the
+30a. Complete the body of the following method, whose purpose is to add the
 value of its parameter to a field named score.
  /**
  * Increase score by the given number of points.
