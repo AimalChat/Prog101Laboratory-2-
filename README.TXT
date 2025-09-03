@@ -285,6 +285,13 @@ public Student(int ageInYears);
 private boolean alive;
 
 35b.
+/**
+     * Set the alive state of the student
+     */
+    public void alive(boolean alive)
+    {
+        alive = true;
+    }
 
 36a. Modify the constructor TicketMachine so that its parameter is called 
 price, and change the assignment to the price field to match 
@@ -318,12 +325,15 @@ public void prompt()
 statement of printTicket so that price also has quotes around it, as 
 follows? System.out.println("# " + "price" + " cents.");
 
-39b.
+39b.It would print out the string "price" rather than the value of the
+field price. So : "# price cents" is the resulting print the caller will
+see in the terminal.
 
 40a. What about the following version? 
 System.out.println("# price cents.");
 
-40b.
+40b. It would almost print out the same as in question 29, "# price cents.",
+the difference being the period ending the string.
 
 41a.Add a showPrice method to the TicketMachine class. This should have a 
 void return type and take no parameters. The body of the method should 
@@ -331,12 +341,22 @@ print: “The price of a ticket is xyz cents.” where xyz should be
 replaced by the value held in the price field when the method is called.
 
 41b.
+   /**
+     * Show the price of tickets for this machine.
+     */
+    public void showPrice()
+    {
+        int xyz= price;
+        System.out.println("The price of a ticket is " + xyz + " cents.");
+    }
 
 42a. Create two ticket machines with differently priced tickets. Do 
 calls to their showPrice methods show the same output, or different? 
 How do you explain this effect?
 
-42b.
+42b.They show different outputs, because I associated xyz with the
+variable price in the filed named "price". So they simply take the inputed
+data from first creating the machine and simpky replace it with it.
 
 43a.Challenge exercise In the printTicket method, replace the statement 
 that prints the price of the ticket withthe following:
