@@ -220,7 +220,7 @@ Why do you think this might be?
 
 29b.
 
-30a. Complete the body of the following method, whose purpose is to add the
+31a. Complete the body of the following method, whose purpose is to add the
 value of its parameter to a field named score.
  /**
  * Increase score by the given number of points.
@@ -230,5 +230,67 @@ value of its parameter to a field named score.
  // TODO: Increase score by the value in points.
  }
 
-30b.
+31b. 
+score = points + score;
+
+32a.
+
+32b.
+
+33a.
+
+33b.
+
+34a.
+
+34b.
+
+35a.
+
+35b.
+
+36a.
+
+36b.
+
+37a.
+
+37b.
+
+38a.
+
+38b.
+
+39a.
+
+39b.
+
+40a.
+
+40b.
+
+41a.
+
+41b.
+
+42a.
+
+42b.
+
+43a.
+
+43b.
+
+44a.
+
+44b.
+
+45a.
+
+45b.
+
+46a.
+
+46b.
+
 
