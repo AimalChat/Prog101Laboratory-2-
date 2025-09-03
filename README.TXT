@@ -242,7 +242,7 @@ project from Chapter 1:
 Is the addCredits method a mutator? If so, how could you demonstrate 
 that with a Student object? Try it out.
 
-32b.
+32b.ijfe
 
 33a.Complete the following method, whose purpose is to subtract the value
 of its parameter from a field named price :
