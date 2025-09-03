@@ -166,7 +166,60 @@ one, so be sure to remember it.
 18b.Student
 
 19a.How many parameters does the following constructor have, and what are their types?
+
 public Book(String title, double price)
 
 19b.There are 2 parameters, first one having String and the other as double.
+
+23a.Compare the header and body of the getBalance method with the header 
+and body of the getPrice method. What is the one difference between the 
+headers and the one difference between the bodies?
+
+23b.
+
+24a.If a call to getPrice can be characterized as “What do tickets cost?” 
+how would you characterize a call to getBalance?
+
+24b.
+
+25a.If the name of getBalance is changed to getAmount, does the return 
+statement in the body of the method also need to be changed for the code to 
+compile? Try it out within BlueJ. What does this tell you about the name of 
+an accessor method and the name of the field associated with it?
+
+25b.
+
+26a.Add the getter method getTotal to the class TicketMachine to return the 
+value of the total field. Check that you have done this correctly by calling 
+the method when there are different amounts in the total field.
+
+26b.
+
+27a.Try removing the return statement from the body of getPrice. What error 
+message do you see now when you try compiling the class?
+
+27b.
+
+28a.Compare the method headers of getPrice and printTicket from the 
+TicketMachine class. Apart from their names, what is the main difference 
+between them?
+
+28b.
+
+29a. Do the insertMoney and printTicket methods have return statements? 
+Why do you think this might be?
+
+29b.
+
+31a. Complete the body of the following method, whose purpose is to add the
+value of its parameter to a field named score.
+ /**
+ * Increase score by the given number of points.
+ */
+ public void increaseScore(int points)
+ {
+ // TODO: Increase score by the value in points.
+ }
+
+30b.
 
