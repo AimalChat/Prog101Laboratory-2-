@@ -17,6 +17,8 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    //The state of the student
+    private boolean alive;
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -25,11 +27,28 @@ public class TicketMachine
      */
     public TicketMachine(int cost)
     {
-        price = price;
+        price = cost;
         balance = 0;
         total = 0;
     }
 
+    /**
+     * Set the alive state of the student
+     */
+    public void alive(boolean alive)
+    {
+        alive = true;
+    }
+
+    /**
+     * Show the price of tickets for this machine.
+     */
+    public void showPrice()
+    {
+        int xyz= price;
+        System.out.println("The price of a ticket is " + xyz + " cents.");
+    }
+    
     /**
      * Retreive the total amount of money collected by this machine.
      */
@@ -38,11 +57,14 @@ public class TicketMachine
         return total;
     }
     
+    /**
+     * Prompt the message to the caller : Please insert the correct 
+     * amount of money.
+     */
     public void prompt()
     {
         System.out.println("Please insert the correct amount of money.");
     }
-    
     
     /**
      * Return the price of a ticket.
