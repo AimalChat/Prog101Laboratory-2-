@@ -175,36 +175,45 @@ public Book(String title, double price)
 and body of the getPrice method. What is the one difference between the 
 headers and the one difference between the bodies?
 
-23b.
+23b. The name of the methods in the headers and the variables returned in the bodies.
 
 24a.If a call to getPrice can be characterized as “What do tickets cost?” 
 how would you characterize a call to getBalance?
 
-24b.
+24b. "How much is the balance?"
 
 25a.If the name of getBalance is changed to getAmount, does the return 
 statement in the body of the method also need to be changed for the code to 
 compile? Try it out within BlueJ. What does this tell you about the name of 
 an accessor method and the name of the field associated with it?
 
-25b.
+25b. No, since we just changed the name of the method, meaning no variables were affected
+by the minute change.
 
 26a.Add the getter method getTotal to the class TicketMachine to return the 
 value of the total field. Check that you have done this correctly by calling 
 the method when there are different amounts in the total field.
 
 26b.
+   /**
+     * Retreive the total amount of money collected by this machine.
+     */
+    public int getTotal()
+    {
+        return total;
+    }
 
 27a.Try removing the return statement from the body of getPrice. What error 
 message do you see now when you try compiling the class?
 
-27b.
+27b. "not a statement"
 
 28a.Compare the method headers of getPrice and printTicket from the 
 TicketMachine class. Apart from their names, what is the main difference 
 between them?
 
-28b.
+28b. one has the keyword "void", meaning no value is presented to the user, whilst the
+other has no such keyword, meaning it returns a value ot be displayed.
 
 29a. Do the insertMoney and printTicket methods have return statements? 
 Why do you think this might be?
