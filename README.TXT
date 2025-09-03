@@ -218,7 +218,7 @@ other has no such keyword, meaning it returns a value ot be displayed.
 29a. Do the insertMoney and printTicket methods have return statements? 
 Why do you think this might be?
 
-29b.
+29b.???
 
 31a. Complete the body of the following method, whose purpose is to add the
 value of its parameter to a field named score.
@@ -231,7 +231,7 @@ value of its parameter to a field named score.
  }
 
 31b. 
-score = points + score;
+score = score + points;
 
 32a. The addCredits method is from the Student class in the lab-classes
 project from Chapter 1:
@@ -242,7 +242,9 @@ project from Chapter 1:
 Is the addCredits method a mutator? If so, how could you demonstrate 
 that with a Student object? Try it out.
 
-32b.ijfe
+32b.Yes, because it changes the value stored in a field. In this case, 
+the value stored in the field "credits" is modified by adding the inputed 
+int value named "additionalPoints".
 
 33a.Complete the following method, whose purpose is to subtract the value
 of its parameter from a field named price :
@@ -255,12 +257,29 @@ of its parameter from a field named price :
  }
 
 
-33b.
+33b. price = price - amount; Or? price -= amount;
 
 34a.Write a setter method for a field called age which is of type int. 
 Give the parameter the name currentAge.
 
 34b.
+public class Student
+{
+//Fields
+private int age;
+
+//Create a new student.
+public Student(int ageInYears);
+{
+ ageInYears = age
+ age = 0
+}
+
+//Set current age of the student.
+ public void currentAge(int age);
+{
+ age = age
+}
 
 35a.Write a setter method for the following field:
 private boolean alive;
@@ -273,12 +292,16 @@ price, and change the assignment to the price field to match
 inspector. What do you observe in the inspector about the value of the 
 price field as a result of this change?
 
-36b.
+36b.Firstly, the name of the variable in the parameter : "cost" will
+end up being useless, since price equals price, you'd also have to change
+the name of the variable held in the parenthsis of the constructor method.
+Meaning it will go to the standard value set by Java' program, 0. Since
+we failed to attribute a value to it.
 
 37a.Write down exactly what will be printed by the following statement:
 System.out.println("My cat has green eyes.");
 
-37b.
+37b.Where? in the method printTicket? Outside by its lonesome? Where???
 
 38a.Add a method called prompt to the TicketMachine class. This should 
 have a void return type and take no parameters. The body of the method 
@@ -286,6 +309,10 @@ should print the following single line of output:
  Please insert the correct amount of money.
 
 38b.
+public void prompt()
+    {
+        System.out.println("Please insert the correct amount of money.");
+    }
 
 39a. What do you think would be printed if you altered the fourth 
 statement of printTicket so that price also has quotes around it, as 
