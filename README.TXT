@@ -359,27 +359,36 @@ variable price in the filed named "price". So they simply take the inputed
 data from first creating the machine and simpky replace it with it.
 
 43a.Challenge exercise In the printTicket method, replace the statement 
-that prints the price of the ticket withthe following:
+that prints the price of the ticket with the following:
  System.out.printf(“# %d cents.%n”, price);
 Note that the call is now to a printf method rather than println. Does 
 it print the same output as statement it has replaced? From the line 
 that it prints, can you work out what the %d and %n parts mean here?
 
-43b.
+43b. Yes, it prints the exact same one as the previous method.
+I think that "%d" and ".%n" somehow act as the keywords necessary to
+use the printf method rather than the printl or maybe it's added to not
+confuse the computer since two different methods are being used in the
+same method.
 
 44a.Modify the constructor of TicketMachine so that it no longer has a 
 parameter. Instead, the price of tickets should be fixed at 1000 cents. 
 What effect does this have when you construct ticket-machine objects 
 within BlueJ?
 
-44b.
+44b.The only parameter left is naming the instance created of said objects
+and the other methods conform to the modified state of the constructor.
 
 45a. Give the class two constructors. One should take a single parameter 
 that specifies the price, and the other should take no parameter and set 
 the price to be a default value of your choosing. Test your 
 implementation by creating machines via the two different constructors.
 
-45b.
+45b. I did it! Just remember that there's no need to add anything to the
+wrapper, just add the parameter to one and both constructors will be
+shown available to pick when you compile. So adding a parameter will
+create the second option(or whatever you add or anything to the 
+parameters)
 
 46a. Implement a method, empty, that simulates the effect of removing 
 all money from the machine. This method should have a void return type, 
