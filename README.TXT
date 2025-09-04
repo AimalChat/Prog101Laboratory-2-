@@ -218,7 +218,7 @@ other has no such keyword, meaning it returns a value ot be displayed.
 29a. Do the insertMoney and printTicket methods have return statements? 
 Why do you think this might be?
 
-29b.???
+29b.No, becasue in the code there is no keyword "return"
 
 31a. Complete the body of the following method, whose purpose is to add the
 value of its parameter to a field named score.
@@ -304,11 +304,6 @@ end up being useless, since price equals price, you'd also have to change
 the name of the variable held in the parenthsis of the constructor method.
 Meaning it will go to the standard value set by Java' program, 0. Since
 we failed to attribute a value to it.
-
-37a.Write down exactly what will be printed by the following statement:
-System.out.println("My cat has green eyes.");
-
-37b.Where? in the method printTicket? Outside by its lonesome? Where???
 
 38a.Add a method called prompt to the TicketMachine class. This should 
 have a void return type and take no parameters. The body of the method 
